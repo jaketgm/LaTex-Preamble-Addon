@@ -1,0 +1,7 @@
+% Helper macro to define an operator and its "not" version
+\makeatletter
+\newcommand{\defineop}[2]{%
+    \newcommand{#1}{#2}% Define the main operator
+    \expandafter\newcommand\csname n#1\endcsname{\not\mathrel{#2}}% Define the "not" version
+}
+\makeatother

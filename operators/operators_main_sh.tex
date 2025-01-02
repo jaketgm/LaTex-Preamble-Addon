@@ -1,0 +1,11 @@
+\newcommand{\includepathops}[1]{\input{#1}}
+\newcommand{\includepathforneg}[2]{\input{#1/#2}}
+
+\includepathops{binary_operators_sh.tex}
+\includepathops{relation_operators_sh.tex}
+\includepathops{unary_operators_sh.tex}
+\includepathforneg{negation_helper}{negation_helper_sh.tex}
+
+% Activate all operators
+\defineunary_operators
+\definerelation_operators
